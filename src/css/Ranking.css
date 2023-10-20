@@ -1,0 +1,41 @@
+.main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainContainer {
+  display: flex;
+  width: 100vw;
+}
+
+.leftContainer {
+  width: 50%;
+  display: flex;
+  padding: 0 30px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.rightContainer {
+  width: 50%;
+}
+
+.cardRanking {
+  background-color: #282c34;
+  border: solid #7361fb 2px;
+  border-radius: 24px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.331) , 0 6px 20px 0 rgba(0, 0, 0, 0.365);
+  display: flex;
+  flex-direction: column;
+  padding: 48px;
+  width: 170px;
+  height: 230px;
+}
+
+.cardRanking > img {
+  max-width: 150px;
+  align-self: center;
+}

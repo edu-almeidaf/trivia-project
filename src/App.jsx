@@ -15,8 +15,10 @@ export default function App() {
 
   useEffect(() => {
     const domSelect = document.getElementsByTagName('form');
+    const divSelect = document.getElementsByTagName('div');
     document.body.className = theme;
     if (domSelect.length !== 0) domSelect[0].className = theme;
+    if (location.pathname === '/ranking') divSelect[1].className = theme;
   }, [theme, location]);
 
   const LigthMode = () => {
